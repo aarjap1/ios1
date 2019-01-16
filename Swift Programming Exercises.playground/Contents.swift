@@ -8,26 +8,41 @@ import UIKit
 
 
 // 0. Declare a constant pi and assign it the value 3.14159. Use type annotation
+let pi:Double = 3.14159
 
 // 1. Declare a variable, isCold, and assign the value true. Use type annotation
+var isCold:Bool = true
 
 // 2. Declare a variable, fastFood, with the value "Jimmy Johns". Use type inference.
 
+var fastFood:String = "Jimmy Johns"
+
 // 2.1 Declare a variable, age, with the value 18. Then print out the statement "You are xx years old", replacing xx with age. Use type interpolation to do so.
+
+var age:Int = 18
+print("You are \(age) years old")
 
 // 3. Declare an empty array of Strings, movies. Use type annotation.
 var movies:[String] = [ ]
 
 // 4. Repeat 3, but this time using type inference. What error do you get? [After determining the error, comment out the statement so the rest of your playground will run.]
 
+//var movies = []  // We get error: empty collection literal requires an explicit type var movies = []
 
 // 5. Add a new movie, "Rogue One", to movies
+movies.insert("Rogue One",at:0)
+
 
 // 6. Add 2 new movies, "Zootopia" and "Wonder Woman" (in one statement)
+movies += ["Zootopia","Wonder Woman"]
 
 // 7. Write code to print out all the elements of movies. Do so using an explicit index and [ ] to access the elements.
+for movie in movies {
+    print(movie)
+}
 
 // 8. Repeat 6 using a for-in loop
+
 
 // 9. Write code to print out the numbers 0, 3, 6, 9, ... 21. Use stride(from:to:by:)
 
@@ -43,10 +58,9 @@ var movies:[String] = [ ]
 
     var roll = Int.random(in: 1...6) + Int.random(in:1...6) // generates 2 random Ints, each between 1 and 6 inclusive
 
-let pi:Double = 3.14159
 
-var isCold:Bool = true
 
-var
+
+
 
 
